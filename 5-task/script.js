@@ -14,7 +14,33 @@ const users = [
       return hasDog.includes(element) ? false : true;
   }
 
+  get age() {
+    const currentYear = new Date().getFullYear();
+    return currentYear - this.year;
+  }
+}
+
 
   function filterAdults(age) {
       return age > 18;
   }
+
+  function checkAge(age, confirmMessage) {
+    return age > 18 ? true : confirm(confirmMessage);
+  }
+
+  function checkAge(age, confirmMessage) {
+    return age > 18 ? true : confirm(confirmMessage);
+  }
+  
+  // console.log(checkAge(18, 'Did parents allow you?'));
+  
+  const checkAgeLiteral = function(age, confirmMessage) {
+    return age > 18 ? true : confirm(confirmMessage);
+  };
+  
+  console.log(checkAgeLiteral(18, 'Did parents allow you?'));
+  
+  const checkAgeArrow = (age, confirmMessage) => age > 18 ? true : confirm(confirmMessage);
+  
+  console.log(checkAgeArrow(18, 'Did parents allow you?'));
