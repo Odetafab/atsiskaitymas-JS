@@ -6,16 +6,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
-  
-  /* Mobile first */
-  .wrapper {
-    min-height: 100vh;
-    min-width: calc(100vw - (100vw - 100%));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1f1f1;
-  }
+
   
   .btn {
     width: 300px;
@@ -23,6 +14,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  
   #btn__element {
     width: 75%;
     padding: 15px 25px;
