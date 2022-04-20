@@ -10,4 +10,3 @@ function showObjectKeys {
 }
 
 console.log(Object.keys(object1));
-// expected output: Array ["a", "b", "c"]

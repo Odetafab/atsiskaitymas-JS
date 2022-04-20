@@ -4,7 +4,17 @@ function kiloweightConvert(value) {
     document.getElementById("Grams").innerHTML=value*1000;
   }
 
-  
+const form = document.getElementById("form");
+const Pounds = document.getElementById("Pounds");
+const Ounces = document.getElementById("Ounces");
+const Grams = document.getElementById("Grams");
+
+  form.addEventListener("submit"); 
+
+  // function doNothingButtonClicked() {
+  //   var input = document.getElementById("inputText").value
+  //   document.getElementById("outputArea").innerHTML = input
+  // } 
 
 
 //   const input = document.querySelector('input');
